@@ -1,11 +1,12 @@
-const io = require("socket.io")(); // (1)
+const Server = require("socket.io"); // (1)
+const io = new Server(); // (1)
 
 const messages = new Set(); // (5)
-const connectedUsers = new Set();
+const connectedUsers = new Set(); // (7)
 
 io.on("connection", socket => {
   // (1)
-  // console.log(socket) // (1)
+  // console.log("✋ New connection. ID:", socket.id); // (1)
   const { name } = socket.client.request._query;
 
   const user = {
@@ -32,3 +33,4 @@ io.on("connection", socket => {
 
 const port = 8000; // (1)
 io.listen(port); // (1)
+console.log(`🗼 Server listening on port ${port}`); // (1)
