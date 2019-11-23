@@ -11,7 +11,7 @@ services:
     volumes:
       - ./client:/usr/src/app
   backend:
-    container_name: awesome_server
+    container_name: server
     build:
       context: ./server
       dockerfile: Dockerfile

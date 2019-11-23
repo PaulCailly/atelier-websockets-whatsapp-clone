@@ -18,26 +18,28 @@ class App extends Component {
 
     this.state = {
       user: {
-        name: faker.name.firstName()
+        name: faker.name.firstName() // (4)
       },
-      message: "",
-      messages: [],
-      connectedUsers: []
+      message: "", // (4)
+      messages: [], // (6)
+      connectedUsers: [] // (7)
     };
 
-    this.socket = new Socket(this.state.user); // (2)
+    this.socket = new Socket(this.state.user); // (3) +
   }
 
   componentDidMount() {
-    this.socket.subscribeToMessages(this.setMessages);
-    this.socket.subscribeToConnectedUsers(this.setConnectedUsers);
+    this.socket.subscribeToMessages(this.setMessages); // (6)
+    this.socket.subscribeToConnectedUsers(this.setConnectedUsers); // (7)
   }
 
   handleChange = event => {
+    // (4)
     this.setState({ message: event.target.value });
   };
 
   handleSubmit = event => {
+    // (4)
     event.preventDefault();
 
     const message = {
@@ -52,12 +54,14 @@ class App extends Component {
   };
 
   setMessages = messages => {
+    // (6)
     this.setState({
       messages: messages
     });
   };
 
   setConnectedUsers = users => {
+    // (7)
     this.setState({
       connectedUsers: users
     });
@@ -69,8 +73,11 @@ class App extends Component {
     return (
       <div>
         {/* Hello World  // (2) */}
+        {/* <Header /> // (7) */}
         <Header connectedUsers={connectedUsers} />
+        {/* <Chat /> *} // (6) */}
         <Chat user={user} messages={messages} />
+        {/* <MessageInput /> *} // (4) */}
         <MessageInput
           input={{ value: message, onChange: this.handleChange }}
           handleSubmit={this.handleSubmit}

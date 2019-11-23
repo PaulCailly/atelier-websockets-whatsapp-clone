@@ -4,6 +4,7 @@ import Message from "../../__helpers__/message/Message";
 import "./styles.css";
 
 const Chat = ({ messages }) => {
+  // (6)
   return (
     <div>
       <div className="chat-background">

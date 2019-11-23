@@ -1,11 +1,11 @@
-import io from "socket.io-client"; // (2)
+import io from "socket.io-client"; // (3)
 
 class Socket {
-  // (2)
+  // (3)
   constructor(user) {
-    // (2)
+    // (3)
     this.user = user;
-    this.socket = io(`http://localhost:8000/?name=${user.name}`); // (2)
+    this.socket = io(`http://localhost:8000/?name=${user.name}`); // (3)
 
     window.onbeforeunload = () => {
       this.socket.close();
@@ -19,6 +19,7 @@ class Socket {
   };
 
   subscribeToMessages = callback => {
+    // (6)
     this.socket.on("messages", messages => {
       const parsedMessages = messages.map(message => ({
         ...message,
@@ -31,8 +32,9 @@ class Socket {
   };
 
   sendMessage = message => {
+    // (4)
     this.socket.emit("messages", message);
   };
 }
 
-export default Socket; // (2)
+export default Socket; // (3)

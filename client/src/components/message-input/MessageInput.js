@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import "./styles.css";
 
 const MessageInput = ({ handleSubmit, input }) => {
+  // (4)
   return (
     <div className="container">
       <form onSubmit={handleSubmit}>
