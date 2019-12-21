@@ -1,5 +1,6 @@
 {
-  "name": "workshop-websockets-server",
+  "name": "workshop-whatsapp-clone-server",
+  "homepage": "https://github.com/PaulCailly/workshop-websockets-whatsapp-clone",
   "version": "1.0.0",
   "author": "Paul Cailly",
   "scripts": {

@@ -1,0 +1,12 @@
+{
+  "name": "workshop-whatsapp-clone",
+  "homepage": "https://github.com/PaulCailly/workshop-websockets-whatsapp-clone",
+  "version": "1.0.0",
+  "author": "Paul Cailly",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
