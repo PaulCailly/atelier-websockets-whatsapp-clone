@@ -1,8 +1,10 @@
 {
   "name": "workshop-whatsapp-clone",
-  "homepage": "https://github.com/PaulCailly/workshop-websockets-whatsapp-clone",
+  "homepage": "https://ateliers.pcailly.dev/websockets-whatsapp-clone",
   "version": "1.0.0",
   "author": "Paul Cailly",
+  "repository": "https://github.com/PaulCailly/workshop-websockets-whatsapp-clone",
+  "description": "Découvrir Websocket avec un clone de WhatsApp en React",
   "scripts": {
     "start-client": "cd client && npm start ",
     "start-server": "cd server && npm start ",
@@ -13,5 +15,6 @@
   },
   "dependencies": {
     "npm-run-all": "^4.1.5"
-  }
+  },
+  "license": "MIT"
 }
