@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/websockets-whatsapp-clone/static/css/main.33adcb45.chunk.css",
+    "main.js": "/websockets-whatsapp-clone/static/js/main.2509f860.chunk.js",
+    "main.js.map": "/websockets-whatsapp-clone/static/js/main.2509f860.chunk.js.map",
+    "runtime-main.js": "/websockets-whatsapp-clone/static/js/runtime-main.9de6cc61.js",
+    "runtime-main.js.map": "/websockets-whatsapp-clone/static/js/runtime-main.9de6cc61.js.map",
+    "static/js/2.eb3adf63.chunk.js": "/websockets-whatsapp-clone/static/js/2.eb3adf63.chunk.js",
+    "static/js/2.eb3adf63.chunk.js.map": "/websockets-whatsapp-clone/static/js/2.eb3adf63.chunk.js.map",
+    "index.html": "/websockets-whatsapp-clone/index.html",
+    "precache-manifest.a6ff87d64388e3839b397a5b20d73175.js": "/websockets-whatsapp-clone/precache-manifest.a6ff87d64388e3839b397a5b20d73175.js",
+    "service-worker.js": "/websockets-whatsapp-clone/service-worker.js",
+    "static/css/main.33adcb45.chunk.css.map": "/websockets-whatsapp-clone/static/css/main.33adcb45.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9de6cc61.js",
+    "static/js/2.eb3adf63.chunk.js",
+    "static/css/main.33adcb45.chunk.css",
+    "static/js/main.2509f860.chunk.js"
+  ]
+}
