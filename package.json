@@ -6,7 +6,10 @@
   "scripts": {
     "start-client": "cd client && npm start ",
     "start-server": "cd server && npm start ",
-    "start": "npm-run-all --parallel start-client start-server"
+    "start": "npm-run-all --parallel start-client start-server",
+    "build-client": "cd client && npm build",
+    "build-server": "cd server && npm start",
+    "build": "npm-run-all --parallel build-client build-server"
   },
   "dependencies": {
     "npm-run-all": "^4.1.5"
