@@ -4,14 +4,10 @@ Dans cet atelier nous allons voir comment construire une application avec la tec
 
 Nous allons construire un chat inspiré de **WhatsApp**. Les utilisateurs pourront envoyer et recevoir des messages instantanés grâce à [socket.IO](https://socket.io/).
 
-## learn
+## Ce que je vais apprendre
 
 -   Création et utilisation de components pour le client React
 -   Mise en place d'un serveur NodeJS,
 -   Communication clients / serveur avec Socket.IO
 
-## Prerequisites
-
--   node 12.7.0
--   npm 6.10.0
-
+## [Commencer cet Atelier](https://ateliers.pcailly.dev/websockets-whats-app-clone)
