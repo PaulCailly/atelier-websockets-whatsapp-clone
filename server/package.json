@@ -1,13 +1,13 @@
 {
   "author": "Paul Cailly",
-  "name": "workshop-whatsapp-clone-client",
+  "name": "workshop-whatsapp-clone-server",
   "description": "Découvrir Websocket avec un clone de WhatsApp en React",
   "version": "1.0.0",
   "homepage": "https://ateliers.pcailly.dev/websockets-whatsapp-clone",
   "repository": "https://github.com/PaulCailly/workshop-websockets-whatsapp-clone",
   "scripts": {
     "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node index.js"
   },
   "dependencies": {
     "nodemon": "^1.19.4",
