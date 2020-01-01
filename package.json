@@ -5,5 +5,11 @@
   "version": "1.0.0",
   "homepage": "https://ateliers.pcailly.dev/websockets-whatsapp-clone",
   "repository": "https://github.com/PaulCailly/workshop-websockets-whatsapp-clone",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "docker-compose build"
+  },
+  "dependencies": {
+    "docker-compose": "^0.23.1"
+  }
 }
