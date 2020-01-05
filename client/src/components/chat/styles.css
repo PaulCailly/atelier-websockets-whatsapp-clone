@@ -1,0 +1,10 @@
+.chat-background {
+  min-height: 100vh;
+  padding: 20px;
+  padding-bottom: 80px;
+  background-color: #ece5dd;
+}
+
+.chat-background > div + div {
+  padding-top: 10px;
+}
