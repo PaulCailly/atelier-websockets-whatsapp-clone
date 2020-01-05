@@ -3,6 +3,10 @@ const port = 8000;
 
 io.on("connection", socket => {
   console.log("✋ New connection ! ID:", socket.id);
+
+  socket.on("messages", message => {
+    console.log(message);
+  });
 });
 
 io.listen(port);

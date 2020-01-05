@@ -8,6 +8,10 @@ class Socket {
       this.socket.close();
     };
   }
+
+  sendMessage = message => {
+    this.socket.emit("messages", message);
+  };
 }
 
 export default Socket;
