@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+
+  background-color: #f5f1ee;
+}
+
+.header__room-picture {
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+
+  border-radius: 50%;
+  background-image: url("./logo_wildcodeschool.jpg");
+  background-size: cover;
+}
+
+.header__room-name {
+  font-size: 20px;
+  color: grey;
+  line-height: 1.8rem;
+}
+
+.header__room-connected-users {
+  font-size: 14px;
+  color: grey;
+}
