@@ -3,8 +3,8 @@ import ReactDOM from "react-dom"; // (2)
 
 import faker from "faker";
 
-import Socket from "./data/Socket"; // (2)
-import Header from "./__helpers__/header/Header";
+import Socket from "./Socket"; // (2)
+import Header from "./components/header/Header";
 import Chat from "./components/chat/Chat";
 import MessageInput from "./components/message-input/MessageInput";
 

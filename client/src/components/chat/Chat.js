@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Message from "../../__helpers__/message/Message";
+import Message from "../message/Message";
 import "./styles.css";
 
 const Chat = ({ messages }) => {
