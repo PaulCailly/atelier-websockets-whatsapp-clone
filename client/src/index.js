@@ -9,6 +9,7 @@ import Socket from "./Socket";
 // Components
 import MessageInput from "./components/message-input/MessageInput";
 import Chat from "./components/chat/Chat";
+import Header from "./components/header/Header";
 
 // Styles
 import "./styles.css";
@@ -22,7 +23,8 @@ class App extends Component {
         name: faker.name.firstName()
       },
       message: "",
-      messages: []
+      messages: [],
+      connectedUsers: []
     };
 
     this.socket = new Socket(this.state.user);
@@ -30,6 +32,7 @@ class App extends Component {
 
   componentDidMount() {
     this.socket.subscribeToMessages(this.setMessages);
+    this.socket.subscribeToConnectedUsers(this.setConnectedUsers);
   }
 
   handleChange = event => {
@@ -56,10 +59,17 @@ class App extends Component {
     });
   };
 
+  setConnectedUsers = users => {
+    this.setState({
+      connectedUsers: users
+    });
+  };
+
   render() {
-    const { user, message, messages } = this.state;
+    const { user, message, messages, connectedUsers } = this.state;
     return (
       <div>
+        <Header connectedUsers={connectedUsers} />
         <Chat user={user} messages={messages} />
         <MessageInput
           input={{ value: message, onChange: this.handleChange }}

@@ -20,7 +20,6 @@ const Header = ({ connectedUsers }) => {
 Header.propTypes = {
   connectedUsers: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired
     })
   )
