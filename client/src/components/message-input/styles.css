@@ -1,0 +1,19 @@
+.container {
+  background-color: #f5f1ee;
+  position: fixed;
+  padding: 10px;
+  width: 100vw;
+
+  bottom: 0;
+}
+
+.input {
+  padding: 10px;
+  font-size: 14px;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 3px;
+  outline: 0;
+}
