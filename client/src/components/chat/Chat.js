@@ -7,8 +7,8 @@ const Chat = ({ messages }) => {
   return (
     <div>
       <div className="chat-background">
-        {messages.map(message => (
-          <Message key={message.id} {...message} />
+        {messages.map((message, index) => (
+          <Message key={index} {...message} />
         ))}
       </div>
     </div>
@@ -21,7 +21,6 @@ Chat.propTypes = {
       timestamp: PropTypes.instanceOf(Date).isRequired,
       content: PropTypes.string.isRequired,
       sender: PropTypes.shape({
-        id: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired
       }),
       direction: PropTypes.oneOf(["incoming", "outgoing"])
