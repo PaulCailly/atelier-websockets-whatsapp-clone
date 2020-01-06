@@ -6,7 +6,7 @@ Nous allons construire un chat inspiré de **WhatsApp**. Les utilisateurs pourro
 
 ## Ce que je vais apprendre
 
--   Ytilisation de components React
+-   Utilisation de components React
 -   Mise en place d'un serveur Node.js,
 -   Communication clients / serveur avec Socket.IO
 
