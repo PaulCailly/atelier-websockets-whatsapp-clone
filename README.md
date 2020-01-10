@@ -12,7 +12,7 @@ Nous allons construire un chat inspiré de **WhatsApp**. Les utilisateurs pourro
 
 ## [🚀 Commencer cette mission](https://unspace.io/websockets-whatsapp-clone)
 
-## [🛠 Lancer le projet terminé en local]
+## 🛠 Lancer la démo en local
 
 ### Pull le répo
 ```
