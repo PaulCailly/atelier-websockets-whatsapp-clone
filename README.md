@@ -11,3 +11,24 @@ Nous allons construire un chat inspiré de **WhatsApp**. Les utilisateurs pourro
 -   Communication clients / serveur avec Socket.IO
 
 ## [🚀 Commencer cette mission](https://unspace.io/websockets-whatsapp-clone)
+
+## [🛠 Lancer le projet terminé en local]
+
+### Pull le répo
+```
+git pull PaulCailly/atelier-websockets-whatsapp-clone && cd atelier-websockets-whatsapp-clone
+```
+
+### Lancer le client
+```
+cd client
+npm install
+npm start
+```
+
+### Lancer le serveur
+```
+cd server
+npm install
+npm start
+```
