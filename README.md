@@ -10,4 +10,4 @@ Nous allons construire un chat inspiré de **WhatsApp**. Les utilisateurs pourro
 -   Mise en place d'un serveur Node.js,
 -   Communication clients / serveur avec Socket.IO
 
-## [🚀 Commencer cette mission](https://ateliers.pcailly.dev/websockets-whatsapp-clone)
+## [🚀 Commencer cette mission](https://unspace.io/websockets-whatsapp-clone)
